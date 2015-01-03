@@ -1,0 +1,33 @@
+Mon Dec 15 10:00:39 CST 2014
+
+fetch.c fetches some large files decently, but
+  fails strangely on the index.html of google,
+  facebook etc, unless the page is first sent to
+  a private site. This indicates there is some
+  error in the certificate handling.
+
+  fetch.c is not handling arguments with huge
+  shell expansions of file paths, ie; wc /etc/*
+  Perhaps a call to stat() to make sure the 
+  files are of a readable type would fix this.
+
+mv.c needs to be tightened up so that it is not
+  attempting removal of empty files, and files 
+  that may already have been removed.
+
+grep.c -o options needs to be fixed or removed,
+  only certain regex matches are performing
+  correctly in -o mode.
+
+tar.c has bugs with large files over 8 GB
+  this needs further testing on a machine
+  with fast disk io ( or any dedicated
+  machine with a half decent hard drive).
+
+
+
+
+
+
+
+

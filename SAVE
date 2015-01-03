@@ -1,0 +1,13 @@
+p = 0;
+                        while ( p < pnum )
+                        {
+                                if ( good == 1 )
+                                good = 0;
+                                if ( fnmatch(patterns[p], dentry->d_name, FNM_PERIOD) == 0 )
+                                {
+                                        printf( "%s\n", spath);
+                                }
+                                ++p;
+                        }
+
+

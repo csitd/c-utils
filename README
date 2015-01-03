@@ -1,0 +1,45 @@
+(Copyright) 2014, MIT license, C-utils, csitd
+
+These utilities are still in the testing phase, and not
+ready for public use.  
+
+
+
+Ctools is a set of micro sized utilties which are tailored
+toward being simple to read and understand. In this manner it
+can track ideas and potential implementations without getting 
+bogged down with the details of complex command line options, 
+and other potentially semi-useless stuff.  
+
+
+The code is designed to be portable to a certain extent. Testing
+is done on linux and freebsd, testing against Busybox, GNU tools
+and Freebsd's core utilities.
+
+Some tools that only work on linux as of this time:
+ifconfig.c
+df.c
+memused.c
+dmesg.c
+
+At some point when these can be rewritten to work on freebsd I
+may have to divide the repository into two sections:
+
+linux/ 
+
+freebsd/ 
+
+
+
+
+
+
+All of the work here is under constant revision and testing and 
+has not had a formal release.
+
+If you want to use these tools please consider contributing to 
+the code base by; doing security testing/auditing, expanding
+the scripted control "tests" area or simply writing new tools
+and/or sharing your ideas.
+
+
